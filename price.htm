@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Section</title>
+
+    <!-- styling for payment card section -->
+
+    <style>
+        .pricing-section {
+            margin: auto;
+            text-align: center;
+        }
+
+        .toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000;
+            border-radius: 100px;
+            width: fit-content;
+            margin: auto;
+            height: 36px;
+            padding: 5px;
+            gap: 15px;
+        }
+
+        .toggle-btn {
+            margin: 0px;
+            color: #000;
+            width: fit-content;
+            padding: 3px 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 100px;
+            background-color: transparent;
+
+        }
+
+        .active {
+            background-color: #6754E9;
+            color: #fff;
+        }
+
+        .card-shadow {
+            position: relative;
+            background: black;
+            margin: 10px;
+            width: 380px;
+            height: 800px;
+            border-radius: 12px;
+            vertical-align: top;
+
+        }
+
+        .card {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            width: 380px;
+            height: 800px;
+            border-radius: 10px;
+            vertical-align: top;
+            background-color: white;
+            border: 1px solid #000;
+        }
+
+        .card-header-title {
+            font-family: Syne, Sans-serif;
+            color: #000;
+            font-size: 8px;
+            font-weight: 100;
+            text-transform: none;
+            font-style: normal;
+            line-height: 1.1em;
+            letter-spacing: -2px;
+            text-align: center;
+        }
+
+        .price {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 24px;
+            line-height: 1.2em;
+            letter-spacing: -0.6px;
+            font-weight: bold;
+            color: #000;
+            display: none;
+            /* Hide all prices initially */
+        }
+
+        .card-features {
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .card-features-icon {
+            display: flex;
+            margin-top: 4px;
+            justify-content: center;
+            align-items: start;
+            color: #6754E9;
+        }
+
+        .card-features p {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            justify-content: left;
+            font-size: 18px;
+            font-family: var(--vamtam-primary-font-font-family), sans-serif;
+            font-weight: 300;
+            color: #000;
+        }
+
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 50px;
+        }
+
+        /* styling for button */
+
+        .custom-button {
+            display: inline-block;
+            background-color: none;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Styles for the underline */
+        .custom-button::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.2s ease-in-out;
+        }
+
+        /* Hover effect */
+        .custom-button:hover::before {
+            width: 100%;
+        }
+
+        .subscribe-button {
+            border-radius: 100px;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: small;
+            background-color: #000;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+            border: none;
+        }
+
+        .subscribe-button:hover {
+            background-color: #6754E9;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div style="padding: 40px; margin: 50px 0px;">
+
+        <div class="pricing-section">
+
+            <div
+                style="display: flex; flex-direction: row; width: fit-content; margin-left: auto; margin-right: auto; gap: 20px; justify-content: center; align-items: center; padding: 4px 4px; border: 2px solid #000; border-radius: 100px;">
+                <p class="toggle-btn" onclick="switchPricing('monthly')">Monthly
+                </p>
+                <p class="toggle-btn" onclick="switchPricing('6months')">6Months
+                </p>
+                <p class="toggle-btn" onclick="switchPricing('12months')">12Months
+                </p>
+            </div>
+
+
+            <div class="pricing-container">
+
+                <div class="card-shadow">
+                    <div class="card">
+                        <h2 class="card-header-title" style="font-size: 40px; font-weight: 700;">
+                            Ultimate Pro</h2>
+                        <p class="price 6months">$265.99/Month
+                        </p>
+                        <p class="price monthly">$379.99/Month
+                        </p>
+                        <p class="price 12months">$220.39/Month
+                        </p>
+                        <div class="card-features">
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>
+                                22 AI-Generated Posts per day /
+                                Social media account (incl.
+                                Video posts)</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>upto 33 Video posts /
+                                Month</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>
+                                6 Months Social Media Ads
+                                campaign management &
+                                optimization
+                                (example facebook ads, Instagram
+                                Ads)
+                                <br>-OR- <br>
+                                6 Months Search Engine Ads
+                                campaign management &
+                                optimization
+                                (example google ads, Microsoft /
+                                Bing Ads)
+                            </p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Social Media Ads campaign
+                                budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Search Engine Ads
+                                campaign budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>SSL (Secure Socket Layer)
+                                Certificate*</p>
+                        </div>
+
+                        <button class="subscribe-button">
+                            <span class="custom-button">
+                                Subscribe
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card-shadow">
+                    <div class="card">
+                        <h2 class="card-header-title" style="font-size: 40px; font-weight: 700;">
+                            Ultimate</h2>
+                        <p class="price 6months">$244.99 / Month
+                        </p>
+                        <p class="price monthly">$349.99 / Month
+                        </p>
+                        <p class="price 12months">$202.99 /
+                            Month</p>
+                        <div class="card-features">
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>18 AI-Generated Posts per
+                                day / Social media account
+                                (incl. Video posts)</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>5 Months Social Media Ads
+                                campaign management &
+                                optimization
+                                (example facebook ads, Instagram
+                                Ads) <br> -OR- <br> 5 Months
+                                Search Engine Ads campaign
+                                management & optimization
+                                (example google ads, Microsoft /
+                                Bing Ads)
+                            </p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>3 Months of AI-Enhanced
+                                Core SEO (Search Engine
+                                Optimization)</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Social Media Ads campaign
+                                budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Search Engine Ads
+                                campaign budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>
+                                SSL (Secure Socket Layer)
+                                Certificate*</p>
+                        </div>
+                        <button class="subscribe-button">
+                            <span class="custom-button">
+                                Subscribe
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="card-shadow">
+                    <div class="card">
+                        <h2 class="card-header-title" style="font-size: 40px; font-weight: 700;">
+                            Advanced Pro</h2>
+                        <p class="price 6months">$329.99 / Month
+                        </p>
+                        <p class="price monthly">$230.99 / Month
+                        </p>
+                        <p class="price 12months">$191.93 /
+                            Month</p>
+                        <div class="card-features">
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>16 AI-Generated Posts per
+                                day / Social media account
+                                (incl. Video posts)</p>                        
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>1 year of Web Hosting
+                                Included*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>4 Months Social Media Ads
+                                campaign management &
+                                optimization
+                                (example facebook ads, Instagram
+                                Ads) <br>-OR-<br> 4 Months
+                                Search Engine Ads campaign
+                                management & optimization
+                                (example google ads, Microsoft /
+                                Bing Ads)</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Social Media Ads campaign
+                                budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Search Engine Ads
+                                campaign budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>
+                                SSL (Secure Socket Layer)
+                                Certificate*</p>
+                        </div>
+                        <button class="subscribe-button">
+                            <span class="custom-button">Subscribe</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="card-shadow">
+                    <div class="card">
+                        <h2 class="card-header-title" style="font-size: 40px; font-weight: 700;">
+                            Dynamic Plus</h2>
+                        <p class="price 6months">$299.99 / Month
+                        </p>
+                        <p class="price monthly">$209.99 / Month
+                        </p>
+                        <p class="price 12months">$173.99 /
+                            Month</p>
+                        <div class="card-features">
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>14 AI-Generated Posts per
+                                day / Social media account
+                                (incl. Video posts)</p>                        
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>
+                                1 year of Web Hosting Included*
+                            </p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                    </svg>
+                                </span>
+                                3 Months Social Media Ads
+                                campaign management &
+                                optimization
+                                (example facebook ads, Instagram
+                                Ads) <br> -OR- <br> 3 Months
+                                Search Engine Ads campaign
+                                management & optimization
+                                (example google ads, Microsoft /
+                                Bing Ads)
+                            </p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Social Media Ads campaign
+                                budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>Search Engine Ads
+                                campaign budget or spends*</p>
+                            <p><span class="card-features-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-x-circle-fill" style="color: #000;" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z" />
+                                    </svg>
+                                </span>
+                                SSL (Secure Socket Layer)
+                                Certificate*</p>
+                        </div>
+                        <button class="subscribe-button">
+                            <span class="custom-button">Subscribe</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- script for changing price of each package -->
+
+    <script>
+        function switchPricing(term) {
+            const btns = document.querySelectorAll('.toggle-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase().includes(term)) {
+                    btn.classList.add('active');
+                }
+            });
+            document.querySelectorAll('.price').forEach(price => {
+                if (price.classList.contains(term)) {
+                    price.style.display = 'block';
+                } else {
+                    price.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize with weekly pricing
+        window.onload = () => switchPricing('monthly');
+
+    </script>
+
+</body>
+
+</html>
