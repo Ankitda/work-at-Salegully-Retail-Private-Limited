@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison Table</title>
+
+    <style>
+        .table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 60px 0px;
+		}
+
+		.th,
+		.td {
+			padding: 20px;
+			text-align: left;
+			color: #fff;
+			border-right: 1px solid #000;
+		}
+
+		.th:last-child,
+		.td:last-child {
+			border-right: none;
+		}
+
+		.th:first-child,
+		.td:first-child {
+			border-left: none;
+		}
+
+		.th {
+			border-top: none;
+		}
+
+		.tr:nth-child(even) {
+			background-color: #6754E9;
+		}
+
+		.text-center {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.odd-row-color {
+			color: #000;
+		}
+
+		.even-row-border-right-radius {
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+
+		.even-row-border-left-radius {
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+		}
+
+		.table-header-font-family {
+			font-family: Syne, sans-serif;
+			font-weight: 400;
+			font-size: 26px;
+
+		}
+
+		.table-row-font-family {
+			font-size: 18px;
+			font-family: var(--vamtam-primary-font-font-family), sans-serif;
+			font-weight: 300;
+		}
+
+		.font-icon {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+    </style>
+</head>
+<body>
+    <section id="price-comparision" style="padding: 30px;">
+
+        <h2 class="text-center table-header-font-family">Compare plan
+            features</h2>
+
+        <div style="overflow-x: auto;">
+            <table class="table">
+                <thead>
+                    <tr class="tr" style="background-color: #000; ">
+                        <th style="width: 40%;"
+                            class="th even-row-border-left-radius text-center">
+                            <div
+                                class="text-center table-row-font-family">
+                                <div style="height: 22px;"></div>
+                                <p style="margin-top: 10px;">Card</p>
+                            </div>
+                        </th>
+                        <th class="th">
+                            <div
+                                class="text-center table-row-font-family">
+                                <div style="color: #fff; background-color: #6754E9; border-radius: 80px; font-weight: 200; padding: 2px 5px;"
+                                    class="table-row-font-family">Low
+                                    Price</div>
+                                <p style="margin-top: 10px;"> Basic </p>
+                            </div>
+                        </th>
+                        <th class="text-center th">
+                            <div
+                                class="text-center table-row-font-family">
+                                <div style="height: 22px;"></div>
+                                <p style="margin-top: 10px;">Growth</p>
+                            </div>
+
+                        </th>
+                        <th class="text-center th">
+                            <div
+                                class="text-center table-row-font-family">
+                                <div style="height: 22px;"></div>
+                                <p style="margin-top: 10px;">Dynamic
+                                    Plus</p>
+                            </div>
+                        </th>
+                        <th
+                            class="text-center th even-row-border-right-radius">
+                            <div
+                                class="text-center table-row-font-family">
+                                <div style="color: #fff; background-color: #6754E9; border-radius: 80px; font-weight: 200; padding: 2px 5px;"
+                                    class="table-row-font-family">Best
+                                    Value</div>
+                                <p style="margin-top: 10px;">Ultimate
+                                    Pro </p>
+
+                            </div>
+                        </th>
+                    </tr>
+                    <tr class="tr" style="background-color: #fff;">
+
+                        <th class="th even-row-border-left-radius odd-row-color table-row-font-family"
+                            style="vertical-align: middle;">Pricing</th>
+                        <th class="text-center th odd-row-color table-row-font-family"
+                            style="text-align: left;">
+                            <p>Annually: $57.99/month</p>
+                            <p>6Month: $69.99/month</p>
+                            <p>Monthly: $99.99/month</p>
+                        </th>
+                        <th class="text-center th odd-row-color table-row-font-family"
+                            style="text-align: left;">
+                            <p>Annually: $115.99/month</p>
+                            <p>6Month: $139.99/month</p>
+                            <p>Monthly: $199.99/month</p>
+                        </th>
+                        <th class="text-center th odd-row-color table-row-font-family"
+                            style="text-align: left;">
+                            <p>Annually: $173.99/month</p>
+                            <p>6Month: $299.99/month</p>
+                            <p>Monthly: $209.99/month</p>
+                        </th>
+                        <th class="text-center th even-row-border-right-radius odd-row-color table-row-font-family"
+                            style="text-align: left;">
+                            <p>Annually: $220.39/month</p>
+                            <p>6Month: $265.99/month</p>
+                            <p>Monthly: $379.99/month</p>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            22 AI-Generated Posts per day / Social media
+                            account (incl. Video posts)</td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            5 Social Media Accounts
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td
+                            class="even-row-border-right-radius text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <td class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                        1 Free Professional Social Media Accounts / Page
+                        creation (included)
+                    </td>
+                    <td class="text-center td odd-row-color">
+                        <span class="font-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36"
+                                fill="currentColor" class="bi bi-check2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg>
+                        </span>
+                    </td>
+                    <td class="text-center td odd-row-color">
+                        <span class="font-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36"
+                                fill="currentColor" class="bi bi-check2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg>
+                        </span>
+                    </td>
+                    <td class="text-center td odd-row-color">
+                        <span class="font-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36"
+                                fill="currentColor" class="bi bi-check2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg>
+                        </span>
+                    </td>
+                    <td class="text-center td odd-row-color">
+                        <span class="font-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                width="36" height="36"
+                                fill="currentColor" class="bi bi-check2"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                            </svg>
+                        </span>
+                    </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            10 AI-Created YouTube videos / Month (upto 1
+                            min Duration)
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td
+                            class="even-row-border-right-radius text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            Scheduled Posts (fully managed by our
+                            experts)</td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            upto 33 Video posts / Month
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td
+                            class="even-row-border-right-radius text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            Web Designing / Development (Upto 15 Pages)
+                            Basic</td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            3 Months of AI-Enhanced Core SEO (Search
+                            Engine Optimization)
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color even-row-border-right-radius">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            1 year of Web Hosting Included*
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            6 Months Social Media Ads campaign
+                            management & optimization
+                            (example facebook ads, Instagram Ads)
+                            <br>
+                            <span style="font-weight: bold;">-OR-</span>
+                            <br>
+                            6 Months Search Engine Ads campaign
+                            management & optimization
+                            (example google ads, Microsoft / Bing Ads)
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td
+                            class="even-row-border-right-radius text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="36" height="36"
+                                    fill="currentColor"
+                                    class="bi bi-check2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            Social Media Ads campaign budget or spends*
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="even-row-border-left-radius td table-row-font-family" style="vertical-align: middle;">
+                            Search Engine Ads campaign budget or spends*
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td class="text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                        <td
+                            class="even-row-border-right-radius text-center td">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="tr">
+                        <td
+                            class="td odd-row-color table-row-font-family" style="vertical-align: middle;">
+                            SSL (Secure Socket Layer) Certificate*
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+
+                            </span>
+                        </td>
+                        <td class="text-center td odd-row-color">
+                            <span class="font-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="28" height="28"
+                                    fill="currentColor"
+                                    class="bi bi-x-lg"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                                </svg>
+
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </section>
+    
+</body>
+</html>
